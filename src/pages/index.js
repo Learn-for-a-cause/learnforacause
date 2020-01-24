@@ -1,8 +1,12 @@
 import React from "react"
 import Header from "../components/Header"
+import CardList from "../components/CardList"
 import "./index.css"
 
 
 export default () => (
-    <Header/>
+    <div>
+        <Header/>
+        <CardList data={"Machine Learning"} />
+    </div>
 )
