@@ -42,6 +42,33 @@ const CardTitle = styled.h1`
 const CardText = styled.li`
   margin-top: 8px;
 `
+const Content = styled.button`
+  font-weight: 600;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #000000;
+  padding: 18px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.05s linear;
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  }
+  &:focus {
+		outline: 2px dotted #3E30E0;
+	}
+`
 
 const Register = styled.button`
   font-weight: 600;
@@ -73,7 +100,7 @@ const Register = styled.button`
 
 
 const url = 'https://forms.gle/eoLML1HjpHEF2o1D8';
-
+const github = 'https://github.com/Learn-for-a-cause/MachineLearning-workshop'
 
 const Card = ({data}) => (
     <List>
@@ -85,7 +112,7 @@ const Card = ({data}) => (
             <CardText>ML Models - (Logistic regression & Linear regression)</CardText>
             <CardText>Model Training</CardText>
             <CardText>ML resources </CardText>
-            
+            <Content onClick={() => window.open(github, '_blank')} >Github</Content>
             <Register onClick={() => window.open(url, '_blank')} >Register</Register>
         </CardWrapper>
     </List>
