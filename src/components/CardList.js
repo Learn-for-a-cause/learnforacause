@@ -46,7 +46,7 @@ const Content = styled.button`
   font-weight: 600;
   color: #FFF;
   text-transform: uppercase;
-  background: #000000;
+  background: #3E30E0;
   padding: 18px 32px;
   border-radius: 8px;
   text-decoration: none;
@@ -56,7 +56,7 @@ const Content = styled.button`
   border: none;
   position: absolute;
   bottom: 10%;
-  right: 20%;
+  right: 5%;
   &::-moz-focus-inner {
     border: 0;
   }
@@ -113,7 +113,6 @@ const Card = ({data}) => (
             <CardText>Model Training</CardText>
             <CardText>ML resources </CardText>
             <Content onClick={() => window.open(github, '_blank')} >Github</Content>
-            <Register onClick={() => window.open(url, '_blank')} >Register</Register>
         </CardWrapper>
     </List>
 )
